@@ -1,0 +1,10 @@
+footer.footer.dark
+  .container
+    p Designed and built by Slimberly Lim using #[a(href="http://harpjs.com/") Harp] and hosted on #[a(href="https://pages.github.com/") GitHub Pages].
+
+    ul.footer__links.list-unstyled.list-inline
+      for link in public._data.about.links
+        li
+          a(href="#{link.url}")
+            i.fa(class="#{link.icon}" aria-hidden="true" title="#{link.title}")
+    
